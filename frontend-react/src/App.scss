@@ -48,6 +48,11 @@
   p {
     text-transform: uppercase;
     color: var(--black-color);
+
+    span {
+      color: var(--secondary-color);
+      font-weight: 500;
+    }
   }
 }
 

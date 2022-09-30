@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { images } from "../../constants";
+import { images, links } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
 import "./Footer.scss";
@@ -45,14 +45,14 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="Email" />
-          <a href="mailto:contactme@micael.com" className="p-text">
-            contactme@micael.com
+          <a href={`mailto:${links.contact_links.email}`} className="p-text">
+            {links.contact_links.email}
           </a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="Mobile" />
-          <a href="tel:+1 (123) 456-789" className="p-text">
-            +1 (123) 456-789
+          <a href={`tel:${links.contact_links.email}`} className="p-text">
+            {links.contact_links.phone}
           </a>
         </div>
       </div>

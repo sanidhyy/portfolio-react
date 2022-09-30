@@ -16,16 +16,14 @@ const Navbar = () => {
     }
   };
 
-  useEffect(() => {
-    setLink();
-  }, []);
+  useEffect(setLink, []);
 
   window.addEventListener("hashchange", setLink);
 
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <a href={`#${links.navbar_links[0]}`}>
+        <a href={`#${links.navbar_links[0]}`} title="Micael">
           <img src={images.logo} alt="Micael" />
         </a>
       </div>
@@ -36,6 +34,7 @@ const Navbar = () => {
             <a
               href={`#${item}`}
               className={activeLink === item ? "active" : ""}
+              title={item.charAt(0).toUpperCase() + item.slice(1)}
             >
               {item}
             </a>
@@ -59,6 +58,7 @@ const Navbar = () => {
                     href={`#${item}`}
                     className={activeLink === item ? "active" : ""}
                     onClick={() => setToggle(false)}
+                    title={item.charAt(0).toUpperCase() + item.slice(1)}
                   >
                     {item}
                   </a>

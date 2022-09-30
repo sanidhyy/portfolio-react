@@ -7,8 +7,14 @@ const navbar_links = [
   "contact",
 ];
 
+const contact_links = {
+  email: "contactme@micael.com",
+  phone: "+1 (123) 456-789",
+};
+
 const links = {
   navbar_links,
+  contact_links,
 };
 
 export default links;
