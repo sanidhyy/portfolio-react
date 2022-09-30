@@ -2,16 +2,25 @@
   "name": "react-portfolio",
   "private": true,
   "version": "1.0.0",
-  "description": "",
   "main": "package.json",
-  "author": "Shubham Verma <vermashubham50779@gmail.com>",
-  "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
     "build": "sanity build"
   },
+  "license": "MIT",
+  "author": "Sanidhya Kr. Verma",
+  "description": "Modern Portfolio App using React JS",
   "keywords": [
-    "sanity"
+    "reactjs",
+    "react",
+    "react-portfolio",
+    "framer-motion",
+    "animations",
+    "sanity",
+    "js",
+    "javascript",
+    "html",
+    "css"
   ],
   "dependencies": {
     "@sanity/base": "^2.33.3",
