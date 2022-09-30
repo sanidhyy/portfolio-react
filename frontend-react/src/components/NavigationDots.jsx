@@ -10,6 +10,7 @@ const NavigationDots = ({ active }) => {
             key={item + index}
             className="app__navigation-dot"
             style={active === item ? { backgroundColor: "#313BAC" } : {}}
+            title={item.charAt(0).toUpperCase() + item.slice(1)}
           />
         )
       )}
