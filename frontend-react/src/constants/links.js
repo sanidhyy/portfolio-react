@@ -7,6 +7,8 @@ const navbar_links = [
   "contact",
 ];
 
-export default {
+const links = {
   navbar_links,
 };
+
+export default links;
