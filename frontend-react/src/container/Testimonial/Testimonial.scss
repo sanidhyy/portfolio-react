@@ -114,6 +114,7 @@
       object-fit: cover;
       filter: grayscale(1);
       transition: all 0.3s ease-in-out;
+      cursor: pointer;
     }
 
     &:hover {
