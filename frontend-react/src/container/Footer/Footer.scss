@@ -111,3 +111,19 @@
     margin: 1rem 0;
   }
 }
+
+.app__footer-thankyou {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+
+  p {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    @media screen and (max-width: 450px) {
+      font-size: 1rem;
+    }
+  }
+}

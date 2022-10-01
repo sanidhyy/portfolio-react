@@ -22,7 +22,43 @@ const Footer = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  // Check if string is empty or contains whitespaces
+  const isEmptyOrSpaces = (str) => {
+    return /^\s*$/.test(str);
+  };
+
+  const checkEmail = (str) => {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+      str
+    );
+  };
+
   const handleSubmit = () => {
+    const name_in = document.getElementById("name");
+    const email_in = document.getElementById("email");
+    const message_in = document.getElementById("message");
+
+    if (isEmptyOrSpaces(name) || name.length < 3) {
+      name_in.style.border = "1px solid #ff8989";
+      return;
+    } else {
+      name_in.style.border = "none";
+    }
+
+    if (!checkEmail(email)) {
+      email_in.style.border = "1px solid #ff8989";
+      return;
+    } else {
+      email_in.style.border = "none";
+    }
+
+    if (isEmptyOrSpaces(message) || message.length < 3) {
+      message_in.style.border = "1px solid #ff8989";
+      return;
+    } else {
+      message_in.style.border = "none";
+    }
+
     setLoading(true);
 
     const contact = {
@@ -64,6 +100,7 @@ const Footer = () => {
               type="text"
               className="p-text"
               placeholder="Your Name"
+              id="name"
               name="name"
               value={name}
               onChange={handleChangeInput}
@@ -75,6 +112,7 @@ const Footer = () => {
               className="p-text"
               placeholder="Your E-mail"
               name="email"
+              id="email"
               value={email}
               onChange={handleChangeInput}
             />
@@ -85,6 +123,7 @@ const Footer = () => {
               placeholder="Your Message..."
               value={message}
               name="message"
+              id="message"
               onChange={handleChangeInput}
             />
           </div>
@@ -93,8 +132,8 @@ const Footer = () => {
           </button>
         </div>
       ) : (
-        <div>
-          <h3 className="head-text">Thank You for getting in touch.</h3>
+        <div className="app__footer-thankyou app__flex">
+          <p className="bold-text">Thank You for getting in touch.</p>
         </div>
       )}
     </>
