@@ -82,6 +82,22 @@
   }
 }
 
+.app__navbar-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  font-weight: 500;
+  color: var(--white-color);
+  outline: none;
+  font-family: var(--font-base);
+  cursor: pointer;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
 .app__navbar-menu {
   width: 35px;
   height: 35px;

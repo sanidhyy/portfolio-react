@@ -1,19 +1,19 @@
 import React from "react";
-import { BsTwitter, BsInstagram } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+
+import { links } from "../constants";
 
 const SocialMedia = () => {
   return (
     <div className="app__social">
-      <div>
-        <BsTwitter />
-      </div>
-      <div>
-        <FaFacebookF />
-      </div>
-      <div>
-        <BsInstagram />
-      </div>
+      {links.social_links.map((link) => (
+        <div
+          key={link.name}
+          title={link.name}
+          onClick={() => window.open(link.url, "_blank", "noopener")}
+        >
+          {link.icon}
+        </div>
+      ))}
     </div>
   );
 };

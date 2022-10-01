@@ -41,6 +41,14 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <button
+        type="button"
+        className="app__navbar-btn"
+        title="View Source Code on Github"
+        onClick={() => window.open(links.source_code, "_blank", "noopener")}
+      >
+        Source Code
+      </button>
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
@@ -64,6 +72,16 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              <li key="source-code">
+                <a
+                  href={links.source_code}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  title="View Source Code on Github"
+                >
+                  Source Code
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}
