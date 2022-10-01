@@ -27,10 +27,12 @@ const Footer = () => {
     return /^\s*$/.test(str);
   };
 
-  const checkEmail = (str) => {
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-      str
+  // email validation
+  const isInvalidEmail = (email) => {
+    const regex = new RegExp( // eslint-disable-next-line
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
     );
+    return !email || regex.test(email) === false;
   };
 
   const handleSubmit = () => {
@@ -45,7 +47,7 @@ const Footer = () => {
       name_in.style.border = "none";
     }
 
-    if (!checkEmail(email)) {
+    if (isInvalidEmail(email)) {
       email_in.style.border = "1px solid #ff8989";
       return;
     } else {
