@@ -1,3 +1,8 @@
+/**
+ * Export New Images (assets) here
+ * Don't remove anything here (if not sure)
+ **/
+
 import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
 import api from "../assets/api.png";

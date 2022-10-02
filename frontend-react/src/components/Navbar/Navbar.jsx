@@ -5,10 +5,12 @@ import { motion } from "framer-motion";
 import { images, links } from "../../constants";
 import "./Navbar.scss";
 
+// Navbar
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [activeLink, setActiveLink] = useState(links.navbar_links[0]);
 
+  // set active link
   const setLink = () => {
     const currentLink = window.location.hash;
     if (currentLink.length > 0) {
@@ -18,16 +20,19 @@ const Navbar = () => {
 
   useEffect(setLink, []);
 
+  // listen hash change
   window.addEventListener("hashchange", setLink);
 
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
+        {/* Logo */}
         <a href={`#${links.navbar_links[0]}`} title="Micael">
           <img src={images.logo} alt="Micael" />
         </a>
       </div>
       <ul className="app__navbar-links">
+        {/* Navbar links */}
         {links.navbar_links.map((item) => (
           <li key={`link-${item}`} className="app__flex p-text">
             <div />
@@ -41,6 +46,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      {/* Source Code */}
       <button
         type="button"
         className="app__navbar-btn"
@@ -51,8 +57,10 @@ const Navbar = () => {
       </button>
 
       <div className="app__navbar-menu">
+        {/* Toggle Menu */}
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
+        {/* Navbar Menu [MOBILE] */}
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
@@ -72,6 +80,7 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              {/* Source Code [MOBILE] */}
               <li key="source-code">
                 <a
                   href={links.source_code}

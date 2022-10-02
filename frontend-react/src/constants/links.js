@@ -2,6 +2,7 @@ import { BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
+// Navbar links
 const navbar_links = [
   "home",
   "about",
@@ -11,11 +12,13 @@ const navbar_links = [
   "contact",
 ];
 
+// Contact links
 const contact_links = {
   email: "contactme@micael.com",
   phone: "+1 (123) 456-789",
 };
 
+// Social links
 const social_links = [
   {
     name: "Twitter",
@@ -34,8 +37,10 @@ const social_links = [
   },
 ];
 
+// Source code
 const source_code = "http://github.com";
 
+// links
 const links = {
   navbar_links,
   contact_links,

@@ -5,9 +5,11 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./About.scss";
 
+// About
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
+  // fetch about data
   useEffect(() => {
     const query = '*[_type == "abouts"]';
 
@@ -16,6 +18,7 @@ const About = () => {
 
   return (
     <>
+      {/* Heading */}
       <h2 className="head-text">
         I Know that <span>Good Design</span>
         <br />
@@ -31,10 +34,13 @@ const About = () => {
             className="app__profiles-item"
             key={about.title + index}
           >
+            {/* image */}
             <img src={urlFor(about.imgUrl)} alt={about.title} />
+            {/* title */}
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
+            {/* description */}
             <p className="p-text" style={{ marginTop: 10 }}>
               {about.description}
             </p>

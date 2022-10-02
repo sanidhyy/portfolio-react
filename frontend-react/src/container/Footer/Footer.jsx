@@ -5,6 +5,7 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
 import "./Footer.scss";
 
+// Footer
 const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -16,6 +17,7 @@ const Footer = () => {
 
   const { name, email, message } = formData;
 
+  // handle input change
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
 
@@ -35,11 +37,13 @@ const Footer = () => {
     return !email || regex.test(email) === false;
   };
 
+  // handle submit
   const handleSubmit = () => {
     const name_in = document.getElementById("name");
     const email_in = document.getElementById("email");
     const message_in = document.getElementById("message");
 
+    // validate name
     if (isEmptyOrSpaces(name) || name.length < 3) {
       name_in.style.border = "1px solid #ff8989";
       return;
@@ -47,6 +51,7 @@ const Footer = () => {
       name_in.style.border = "none";
     }
 
+    // validate email
     if (isInvalidEmail(email)) {
       email_in.style.border = "1px solid #ff8989";
       return;
@@ -54,6 +59,7 @@ const Footer = () => {
       email_in.style.border = "none";
     }
 
+    // validate messsage
     if (isEmptyOrSpaces(message) || message.length < 3) {
       message_in.style.border = "1px solid #ff8989";
       return;
@@ -70,6 +76,7 @@ const Footer = () => {
       message: message,
     };
 
+    // submit form to sanity
     client.create(contact).then(() => {
       setLoading(false);
       setIsFormSubmitted(true);
@@ -78,8 +85,10 @@ const Footer = () => {
 
   return (
     <>
+      {/* Head */}
       <h2 className="head-text">Take a coffee &amp; chat with me.</h2>
 
+      {/* Email */}
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="Email" />
@@ -87,6 +96,8 @@ const Footer = () => {
             {links.contact_links.email}
           </a>
         </div>
+
+        {/* Phone */}
         <div className="app__footer-card">
           <img src={images.mobile} alt="Mobile" />
           <a href={`tel:${links.contact_links.email}`} className="p-text">
@@ -97,6 +108,7 @@ const Footer = () => {
 
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
+          {/* Name */}
           <div className="app__flex">
             <input
               type="text"
@@ -108,6 +120,7 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
+          {/* Email */}
           <div className="app__flex">
             <input
               type="email"
@@ -119,6 +132,7 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
+          {/* Your Messages */}
           <div>
             <textarea
               className="p-text"
@@ -129,11 +143,13 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
+          {/* Send Message */}
           <button type="button" className="p-text" onClick={handleSubmit}>
             {loading ? "Sending..." : "Send Message"}
           </button>
         </div>
       ) : (
+        // Thank You Message
         <div className="app__footer-thankyou app__flex">
           <p className="bold-text">Thank You for getting in touch.</p>
         </div>

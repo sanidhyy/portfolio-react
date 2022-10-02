@@ -4,6 +4,7 @@ import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
 import { Navbar } from "./components";
 import "./App.scss";
 
+// App
 const App = () => {
   return (
     <div className="app">

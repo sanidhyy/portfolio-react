@@ -1,6 +1,8 @@
 import React from "react";
+
 import { links } from "../constants";
 
+// Navigation Dots
 const NavigationDots = ({ active }) => {
   return (
     <div className="app__navigation">

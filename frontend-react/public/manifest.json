@@ -1,6 +1,6 @@
 {
-  "short_name": "Portfolio App",
-  "name": "Welcome to my Portfolio",
+  "short_name": "Micael",
+  "name": "Modern Portfolio App using React JS",
   "icons": [
     {
       "src": "favicon.ico",

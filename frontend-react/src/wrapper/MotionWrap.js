@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+// Motion Wrap
 const MotionWrap = (Component, classNames) =>
   function HOC() {
     return (
@@ -9,6 +10,7 @@ const MotionWrap = (Component, classNames) =>
         transition={{ duration: 0.5 }}
         className={`${classNames} app__flex`}
       >
+        {/* Component */}
         <Component />
       </motion.div>
     );
