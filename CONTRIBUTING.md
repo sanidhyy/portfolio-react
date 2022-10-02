@@ -1,7 +1,7 @@
 ## Contributing
 
-[fork]: https://github.com/Technical-Shubham-tech/admin-dashboard/fork
-[pr]: https://github.com/Technical-Shubham-tech/admin-dashboard/compare
+[fork]: https://github.com/Technical-Shubham-tech/portfolio-react/fork
+[pr]: https://github.com/Technical-Shubham-tech/portfolio-react/compare
 [style]: https://standardjs.com/
 [code-of-conduct]: CODE_OF_CONDUCT.md
 
