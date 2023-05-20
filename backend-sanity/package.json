@@ -31,6 +31,7 @@
     "@sanity/eslint-config-studio": "^2.0.0",
     "@sanity/vision": "^2.33.3",
     "eslint": "^8.6.0",
+    "loader-utils": "1.4.1",
     "prop-types": "^15.7",
     "react": "^17.0",
     "react-dom": "^17.0",
