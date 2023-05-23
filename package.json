@@ -26,7 +26,7 @@
     "framer-motion": "^10.12.12",
     "minimatch": "9.0.1",
     "node-sass": "^8.0.0",
-    "nth-check": "2.0.1",
+    "nth-check": "2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
