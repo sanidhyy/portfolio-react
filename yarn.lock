@@ -1691,10 +1691,10 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sanity/client@^6.1.3":
-  version "6.1.3"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-6.1.3.tgz#94b87b1de78b041fb85cc489fefc03304c353e3b"
-  integrity sha512-asO/AvN+/D1Ljd6UNPWlo/toeO6SmZdsxyl+fJdLfI9by4svp/K3hD4Qy2DXXmwOfGYqGSH7etv2lnRhu+C5YA==
+"@sanity/client@^6.1.5":
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-6.1.5.tgz#4cd4b5f57f4c89598e6c42bbebde65778dec559b"
+  integrity sha512-X0Du8McoE2564AqAuSlwsQ2i9cHMfPos/a+cslmcTWXY3leV/QKzpqHQomuDlfEmkIhoFZW1UL33+MTxw7+Miw==
   dependencies:
     "@sanity/eventsource" "^5.0.0"
     get-it "^8.1.0"
@@ -4736,10 +4736,10 @@ fraction.js@^4.2.0:
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
   integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
-framer-motion@^10.12.16:
-  version "10.12.16"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-10.12.16.tgz#ccba11d216ac370c6bc65fcd9953a61deb54f071"
-  integrity sha512-w/SfWEIWJkYSgRHYBmln7EhcNo31ao8Xexol8lGXf1pR/tlnBtf1HcxoUmEiEh6pacB4/geku5ami53AAQWHMQ==
+framer-motion@^10.12.18:
+  version "10.12.18"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-10.12.18.tgz#92015860b6468a82e76c4739fcae81e1f6723b3f"
+  integrity sha512-cfhiUpPbj+0eEWKjuD+5cz5cMqH71xOtMxGiS/cSGfHn2OlHIEAqFnFyzEMENw5PxWR9bMVhatzzpD6lexmHZQ==
   dependencies:
     tslib "^2.4.0"
   optionalDependencies:
@@ -8171,7 +8171,7 @@ react-scripts@5.0.1:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
-
+    
 react-tooltip@^5.17.0:
   version "5.17.0"
   resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.17.0.tgz#6a96b6bbbaa9398f2ec04552ea2e52639508db10"
