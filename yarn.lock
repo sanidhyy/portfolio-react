@@ -1665,13 +1665,13 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sanity/client@^6.4.0":
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-6.4.0.tgz#35a7c9324f01454cd2c909a4a1a9cbea0289cba0"
-  integrity sha512-nmu9/gtKPruR6CROvKAqvK/vYfEMMi/La8k/w/leQpRtKySivOIsWX+BT7S5xvK+9wBn0Q8dj9L64no3SEa5vg==
+"@sanity/client@^6.4.6":
+  version "6.4.6"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-6.4.6.tgz#719e81c965f97f29d22604b2ac4ef0a7b012cb93"
+  integrity sha512-MtSYgmDkYyQSosO2GTtlYa0xl9K5fpQvTA1dcgk2XxIqweZEHVi4iDdsEA3JvyoEaURUtQkng8MdYcMzWxPAUg==
   dependencies:
     "@sanity/eventsource" "^5.0.0"
-    get-it "^8.3.0"
+    get-it "^8.4.2"
     rxjs "^7.0.0"
 
 "@sanity/eventsource@^5.0.0":
@@ -4801,10 +4801,10 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.0, get-intrinsic@^1.1.1, get-intrinsic@
     has "^1.0.3"
     has-symbols "^1.0.3"
 
-get-it@^8.3.0:
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/get-it/-/get-it-8.3.2.tgz#10198be3e212651d26d40ccbe1fa12f4dca87539"
-  integrity sha512-UwaVucd0iXbSjbORgU/qyOYGTTaY0Cn48ikxSJSdMCr0oczmb/+Wn4hryWO0l/LI+xB09gG+RVm519Y+xFYpbg==
+get-it@^8.4.2:
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/get-it/-/get-it-8.4.2.tgz#dd247bd855aa7f8583a586fe0b81bc324995e943"
+  integrity sha512-xseDj1loKLcPYKhdlP2k7ZYDE03jTrHgRNt0AURtALOu+8pREmBn+UxZ4JbsxpQ8AvupgmpYuuTa3cS1mtuy2w==
   dependencies:
     debug "^4.3.4"
     decompress-response "^7.0.0"
