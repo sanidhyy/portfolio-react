@@ -38,7 +38,7 @@ const social_links = [
 ];
 
 // Source code
-const source_code = "https://github.com/Technical-Shubham-tech/portfolio-react";
+const source_code = "https://github.com/sanidhyy/portfolio-react";
 
 // links
 const links = {
