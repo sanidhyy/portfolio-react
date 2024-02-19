@@ -18,7 +18,7 @@
     "css"
   ],
   "dependencies": {
-    "@sanity/client": "^6.12.4",
+    "@sanity/client": "^6.13.3",
     "@sanity/image-url": "^1.0.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/jest-dom": "^6.4.2",
