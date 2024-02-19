@@ -8164,10 +8164,10 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react-tooltip@^5.26.1:
-  version "5.26.1"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.26.1.tgz#5bbd757c27274a183ed590bdf987186791380c90"
-  integrity sha512-z8QYiVIfMpIzu3d2ggvgfI5objNCRYfKnRLGWIOBShqRKrXpIrQw4NLYHTL2fj1hH8dtzj25OUnmB346XG1cHg==
+react-tooltip@^5.26.3:
+  version "5.26.3"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.26.3.tgz#bcb9a53e15bdbf9ae007ddf8bf413a317a637054"
+  integrity sha512-MpYAws8CEHUd/RC4GaDCdoceph/T4KHM5vS5Dbk8FOmLMvvIht2ymP2htWdrke7K6lqPO8rz8+bnwWUIXeDlzg==
   dependencies:
     "@floating-ui/dom" "^1.6.1"
     classnames "^2.3.0"
