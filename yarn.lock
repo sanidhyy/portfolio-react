@@ -1788,13 +1788,13 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sanity/client@^6.24.3":
-  version "6.24.3"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-6.24.3.tgz#b0716b25199e7bef5024e9adb5e3c2d9b38a824f"
-  integrity sha512-WfF6Gq2rCxv7n9IcWYRvtGpCYq4398MT303HJhwP/jf3jeU81OxWZ+ApGat37BOJ37tDZmhHxG3Pb1boDxA0EQ==
+"@sanity/client@^6.25.0":
+  version "6.25.0"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-6.25.0.tgz#8e0340305fccc3bc6967decf04781f4bda1fc8d2"
+  integrity sha512-pJy+3SzPMwZ+q/ikH++KA+2QPoHK1fFxnhdWCB5B2yRV2nacr7svBEA2oFkv4ZbmE4+MdeWjvSzeCJz2zoBnnw==
   dependencies:
     "@sanity/eventsource" "^5.0.2"
-    get-it "^8.6.5"
+    get-it "^8.6.6"
     rxjs "^7.0.0"
 
 "@sanity/eventsource@^5.0.2":
@@ -4847,10 +4847,15 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
-follow-redirects@^1.0.0, follow-redirects@^1.15.6:
+follow-redirects@^1.0.0:
   version "1.15.6"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.6.tgz#7f815c0cda4249c74ff09e95ef97c23b5fd0399b"
   integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==
+
+follow-redirects@^1.15.9:
+  version "1.15.9"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.9.tgz#a604fa10e443bf98ca94228d9eebcc2e8a2c8ee1"
+  integrity sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==
 
 fork-ts-checker-webpack-plugin@^6.5.0:
   version "6.5.2"
@@ -5021,15 +5026,15 @@ get-intrinsic@^1.2.4:
     has-symbols "^1.0.3"
     hasown "^2.0.0"
 
-get-it@^8.6.5:
-  version "8.6.5"
-  resolved "https://registry.yarnpkg.com/get-it/-/get-it-8.6.5.tgz#69c85fa215707315861a32733738b578d0f8e640"
-  integrity sha512-o1hjPwrb/icm3WJbCweTSq8mKuDfJlqwbFauI+Pdgid99at/BFaBXFBJZE+uqvHyOVARE4z680S44vrDm8SsCw==
+get-it@^8.6.6:
+  version "8.6.6"
+  resolved "https://registry.yarnpkg.com/get-it/-/get-it-8.6.6.tgz#616d6fbf4aa144493a937bfaef48573861db9a73"
+  integrity sha512-2YKp5J+/x7VE9n8n6QGF6+gE4o1WOVSWrJd/C79JFqPlzHzWx/JQS6L49STWwqmkonkrXHhohQ/PkaI2o7l01g==
   dependencies:
     "@types/follow-redirects" "^1.14.4"
     "@types/progress-stream" "^2.0.5"
     decompress-response "^7.0.0"
-    follow-redirects "^1.15.6"
+    follow-redirects "^1.15.9"
     is-retry-allowed "^2.2.0"
     progress-stream "^2.0.0"
     tunnel-agent "^0.6.0"
