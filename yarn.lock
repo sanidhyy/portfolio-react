@@ -4895,13 +4895,13 @@ fraction.js@^4.2.0:
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
   integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
-framer-motion@^11.18.1:
-  version "11.18.1"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.18.1.tgz#2d832ac22671c1cd90338cac4a572825328e3089"
-  integrity sha512-EQa8c9lWVOm4zlz14MsBJWr8woq87HsNmsBnQNvcS0hs8uzw6HtGAxZyIU7EGTVpHD1C1n01ufxRyarXcNzpPg==
+framer-motion@^12.0.5:
+  version "12.0.5"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.0.5.tgz#cd4f2c04b7c7595c36e4983b55e50ab257b69f4e"
+  integrity sha512-OgfUHfL+u80uCf6VzkV7j3+H2W9zPMdV+40bug4ftB0C2+0FpfNca2rbH2Fouq2R7//bjw6tJhOwXsrsM4+LKw==
   dependencies:
-    motion-dom "^11.18.1"
-    motion-utils "^11.18.1"
+    motion-dom "^12.0.0"
+    motion-utils "^12.0.0"
     tslib "^2.4.0"
 
 fresh@0.5.2:
@@ -6924,17 +6924,17 @@ mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.6"
 
-motion-dom@^11.18.1:
-  version "11.18.1"
-  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-11.18.1.tgz#e7fed7b7dc6ae1223ef1cce29ee54bec826dc3f2"
-  integrity sha512-g76KvA001z+atjfxczdRtw/RXOM3OMSdd1f4DL77qCTF/+avrRJiawSG4yDibEQ215sr9kpinSlX2pCTJ9zbhw==
+motion-dom@^12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.0.0.tgz#7045c63642eecbcc04c40b4457ebb07b3c2b3d0c"
+  integrity sha512-CvYd15OeIR6kHgMdonCc1ihsaUG4MYh/wrkz8gZ3hBX/uamyZCXN9S9qJoYF03GqfTt7thTV/dxnHYX4+55vDg==
   dependencies:
-    motion-utils "^11.18.1"
+    motion-utils "^12.0.0"
 
-motion-utils@^11.18.1:
-  version "11.18.1"
-  resolved "https://registry.yarnpkg.com/motion-utils/-/motion-utils-11.18.1.tgz#671227669833e991c55813cf337899f41327db5b"
-  integrity sha512-49Kt+HKjtbJKLtgO/LKj9Ld+6vw9BjH5d9sc40R/kVyH8GLAXgT42M2NnuPcJNuA3s9ZfZBUcwIgpmZWGEE+hA==
+motion-utils@^12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/motion-utils/-/motion-utils-12.0.0.tgz#fabf79f4f1c818720a1b70f615e2a1768f396ac0"
+  integrity sha512-MNFiBKbbqnmvOjkPyOKgHUp3Q6oiokLkI1bEwm5QA28cxMZrv0CbbBGDNmhF6DIXsi1pCQBSs0dX8xjeER1tmA==
 
 ms@2.0.0:
   version "2.0.0"
