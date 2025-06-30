@@ -23,7 +23,7 @@
     "@testing-library/react": "^15.0.7",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/user-event": "^14.6.1",
-    "framer-motion": "^12.18.1",
+    "framer-motion": "^12.19.2",
     "minimatch": "10.0.3",
     "node-sass": "^9.0.0",
     "nth-check": "2.1.1",
