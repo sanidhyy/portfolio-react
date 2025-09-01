@@ -1862,10 +1862,10 @@
     event-source-polyfill "1.0.31"
     eventsource "2.0.2"
 
-"@sanity/image-url@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-1.1.0.tgz#f26905ef5bdd27165b0f04d8571eb75dc7cdf50a"
-  integrity sha512-JHumVRxzzaZAJyOimntdukA9TjjzsJiaiq/uUBdTknMLCNvtM6KQ5OCp6W5fIdY78uyFxtQjz+MPXwK8WBIxWg==
+"@sanity/image-url@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-1.2.0.tgz#5e8b69d4b079fbcf89138660849f52960066c71e"
+  integrity sha512-pYRhti+lDi22it+npWXkEGuYyzbXJLF+d0TYLiyWbKu46JHhYhTDKkp6zmGu4YKF5cXUjT6pnUjFsaf2vlB9nQ==
 
 "@sinclair/typebox@^0.24.1":
   version "0.24.42"
