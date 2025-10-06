@@ -21,7 +21,7 @@
     "@sanity/client": "^7.11.2",
     "@sanity/image-url": "^1.2.0",
     "@testing-library/react": "^15.0.7",
-    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/user-event": "^14.6.1",
     "framer-motion": "^12.23.22",
     "minimatch": "10.0.3",
