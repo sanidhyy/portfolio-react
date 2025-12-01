@@ -1732,6 +1732,16 @@
   dependencies:
     eslint-scope "5.1.1"
 
+"@noble/ed25519@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@noble/ed25519/-/ed25519-3.0.0.tgz#720d4cdb6b5f632e29164a7e9d5cdfeb82a7ac86"
+  integrity sha512-QyteqMNm0GLqfa5SoYbSC3+Pvykwpn95Zgth4MFVSMKBB75ELl9tX1LAVsN4c3HXOrakHsF2gL4zWDAYCcsnzg==
+
+"@noble/hashes@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-2.0.1.tgz#fc1a928061d1232b0a52bb754393c37a5216c89e"
+  integrity sha512-XlOlEbQcE9fmuXxrVTXCTlG2nlRXa9Rj3rr5Ue/+tX+nmkgbX720YHh0VR3hBF9xDvwnb8D2shVGOwNx+ulArw==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -1862,10 +1872,20 @@
     event-source-polyfill "1.0.31"
     eventsource "2.0.2"
 
-"@sanity/image-url@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-1.2.0.tgz#5e8b69d4b079fbcf89138660849f52960066c71e"
-  integrity sha512-pYRhti+lDi22it+npWXkEGuYyzbXJLF+d0TYLiyWbKu46JHhYhTDKkp6zmGu4YKF5cXUjT6pnUjFsaf2vlB9nQ==
+"@sanity/image-url@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-2.0.1.tgz#ecdca35efea62308cb9a5b055906975476e6855c"
+  integrity sha512-5PEZiWMa70cTp/+S2shkHkhdh3rKClZd86K3sNbk78tyGP86cdYWnEicA54GZA52ZJ/l4lmpmB8m/FLzR4H5wg==
+  dependencies:
+    "@sanity/signed-urls" "^2.0.1"
+
+"@sanity/signed-urls@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@sanity/signed-urls/-/signed-urls-2.0.1.tgz#740deb971796ba517598fa6c183dcbe177dbf8c5"
+  integrity sha512-/u++FnDbaXDWHiHxG1Q4rbGsKRPf6lmTKsXeZ3bbbty/kNHDhVRUA5mRA+TtXlbPrse4ksv3a2vAerKNUNDZOw==
+  dependencies:
+    "@noble/ed25519" "^3.0.0"
+    "@noble/hashes" "^2.0.0"
 
 "@sinclair/typebox@^0.24.1":
   version "0.24.42"
