@@ -1872,17 +1872,17 @@
     event-source-polyfill "1.0.31"
     eventsource "2.0.2"
 
-"@sanity/image-url@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-2.0.2.tgz#7f9c22f304ec002ad4b8e9b179ef2c981b42f31f"
-  integrity sha512-JnwFIHATLXHGVTCKmVwV0xy3xKwGlgVfeUB9cWxu72xJZMsQUyFgGiTz4zD9gRXuncAndkmtzHeIG+2vhKgxHA==
+"@sanity/image-url@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-2.0.3.tgz#58dfa1025c4b0f70b49d339e7d5ee55117d51cf2"
+  integrity sha512-A/vOugFw/ROGgSeSGB6nimO0c35x9KztatOPIIVlhkL+zsOfP7khigCbdJup2FSv6C03FX2XaUAhXojCxANl2Q==
   dependencies:
-    "@sanity/signed-urls" "^2.0.1"
+    "@sanity/signed-urls" "^2.0.2"
 
-"@sanity/signed-urls@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@sanity/signed-urls/-/signed-urls-2.0.1.tgz#740deb971796ba517598fa6c183dcbe177dbf8c5"
-  integrity sha512-/u++FnDbaXDWHiHxG1Q4rbGsKRPf6lmTKsXeZ3bbbty/kNHDhVRUA5mRA+TtXlbPrse4ksv3a2vAerKNUNDZOw==
+"@sanity/signed-urls@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@sanity/signed-urls/-/signed-urls-2.0.2.tgz#e97efbd0bf3b8eb531e58ef79f73a775f3b44d2d"
+  integrity sha512-w/Aq0JDYI44WC5w8mzJBAjCem8qlGrxGTzvNbUWwBfys6kSL+TZBSypV5waCc35XRgt0X5zdYZMJOrshcjJLFw==
   dependencies:
     "@noble/ed25519" "^3.0.0"
     "@noble/hashes" "^2.0.0"
