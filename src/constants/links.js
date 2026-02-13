@@ -23,7 +23,7 @@ const social_links = [
   {
     name: "Twitter",
     icon: <BsTwitter />,
-    url: "http://twitter.com",
+    url: "http://x.com/_sanidhyy",
   },
   {
     name: "Facebook",
@@ -33,7 +33,7 @@ const social_links = [
   {
     name: "Github",
     icon: <AiFillGithub />,
-    url: "http://github.com",
+    url: "http://github.com/sanidhyy",
   },
 ];
 
