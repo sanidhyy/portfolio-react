@@ -1865,10 +1865,10 @@
     event-source-polyfill "1.0.31"
     eventsource "2.0.2"
 
-"@sanity/image-url@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-2.1.0.tgz#1c4bf1cedaf966ed8ab7c9894c46694f69f44b08"
-  integrity sha512-U6M8EF6i4HjzBLcpOie6JZuSj3PLUTK7mAkjK/ugVWm2xCo2BSW0kr5BQfcR5As1mW+uaRvXLVfN/xEVxppTTQ==
+"@sanity/image-url@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-2.1.1.tgz#58fc012e297e997792d94dc5f081424967c18aa7"
+  integrity sha512-qVXsF1teWR6FO3ZFAz46HDcRU+E6EQkpyncPnkGOzeJ1PgnaOiWMVbiSrZtX10s3txzzu/tAjKwbxbGHfDWgGw==
   dependencies:
     "@sanity/signed-urls" "^2.0.2"
 
