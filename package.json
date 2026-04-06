@@ -24,7 +24,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/user-event": "^14.6.1",
     "framer-motion": "^12.38.0",
-    "minimatch": "10.2.4",
+    "minimatch": "10.2.5",
     "node-sass": "^9.0.0",
     "nth-check": "3.0.1",
     "react": "^18.3.1",
