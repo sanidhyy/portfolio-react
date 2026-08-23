@@ -48,6 +48,14 @@ REACT_APP_SANITY_TOKEN=XXXXXXXXXXXXXXXX
 
 **NOTE:** Make sure you don't share these keys publicaly.
 
+### :raising_hand: Need Help?
+
+If you run into issues during installation or setup:
+
+- **GitHub Discussions** — [Open a Q&A discussion](https://github.com/sanidhyy/portfolio-react/discussions/new?category=q-a) for setup and troubleshooting help.
+- **Email** — [sanidhyyy@gmail.com](mailto:sanidhyyy@gmail.com)
+- **Discord** — `sanidhyy`
+
 ## :camera: Screenshots:
 
 ![Modern UI/UX](https://user-images.githubusercontent.com/71302066/193461403-78875688-42a5-4554-a727-7a60ba8aef08.png "Modern UI/UX")
