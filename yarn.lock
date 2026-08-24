@@ -2011,13 +2011,13 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sanity/client@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-8.0.0.tgz#dd78edba0a28b4cad912ee74d68ad76de86e6ca6"
-  integrity sha512-PL2zaAkTz8fL93cEFNsmLFmaFl0/xyslnA3pdYXegdP9v1A+GRwXV3delEPaNmRn520CCDAnCrB7Bz3D//uyQQ==
+"@sanity/client@^8.2.0":
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-8.2.0.tgz#6ad43e55826a3c106f0972410a560344fb890e5b"
+  integrity sha512-SK2o8uh9ayAYAHJtKvd3r78Y5QHlV6RA1H249rYXtm71rdvp4dVvQyf3E/QtYVaeIhrWufK1Mh7sbX6FDVLtWQ==
   dependencies:
-    eventsource "^5.0.0"
-    get-it "^9.4.1"
+    eventsource "^5.1.0"
+    get-it "^9.5.0"
     nanoid "^6.0.1"
     obug "^2.1.4"
     rxjs "^7.8.2"
@@ -4954,17 +4954,17 @@ events@^3.2.0:
   resolved "https://registry.yarnpkg.com/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
   integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
 
-eventsource-parser@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/eventsource-parser/-/eventsource-parser-4.0.0.tgz#a018847bd2da3e133ae51d1f0808a2a518ffa3ac"
-  integrity sha512-aIpvYxbqTx4KYWw73KpCt1Rh22tEAJ144F1qR76CT3Ex+LNMEPKf5HFrK5Yz9fMP1EVT0GrfA35VZvWQhMPuSQ==
+eventsource-parser@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/eventsource-parser/-/eventsource-parser-4.1.0.tgz#5a16373feb67451c8ba5fcf25556db46152feebc"
+  integrity sha512-+DHvQ1wLO//MK+1OZgcuXCbZFKgu3YjKPJt7n98rxX8vezL0ni+7s3ZQiM8bJkUEOk7MsuCycrPLj0FzUNf7Og==
 
-eventsource@^5.0.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-5.1.0.tgz#e0ad05c6b217d71c5a26f34f65f90fceb18cbf2d"
-  integrity sha512-+errgX9LYbcpibagHh7CEjEZJvQbIDZB2yY7SbUAhHGv4Ircri3T9LH33TUtcXHDy/pFYel1xCi4VOcBnr3wmw==
+eventsource@^5.1.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-5.1.1.tgz#e40fa9b09b38b5af7a8dccb800aec5cd4b3bf113"
+  integrity sha512-onrlI7l612Ee3xnBqZNTq4djf6Fho/0yIpO/rYjRG/FzjMyPJquNx9SS3QyjglnVFxwxrube1XmX41zB+0Rdgw==
   dependencies:
-    eventsource-parser "^4.0.0"
+    eventsource-parser "^4.1.0"
 
 execa@^5.0.0:
   version "5.1.1"
@@ -5369,10 +5369,10 @@ get-intrinsic@^1.2.6:
     hasown "^2.0.2"
     math-intrinsics "^1.1.0"
 
-get-it@^9.4.1:
-  version "9.4.1"
-  resolved "https://registry.yarnpkg.com/get-it/-/get-it-9.4.1.tgz#57208ca33403912de4d74f6c525ffbacb1937849"
-  integrity sha512-WEYs8b65nMYdYvbi0AwlyfRWrnkto1xLG1YqxFGKrU4yb7Vd06ryIS5XAFrBgRnYwsoszsZEsUGimQMQE7ztVA==
+get-it@^9.5.0:
+  version "9.5.1"
+  resolved "https://registry.yarnpkg.com/get-it/-/get-it-9.5.1.tgz#a619d674fc72f0421ca85933957f9656b5056cc9"
+  integrity sha512-XCVgepH7ROA/VEW4iaorxII3ZqQt7bqNhRNdeOklqwWsl7iGuJCGL7jxkUzcWVpK5zsYr0WaMqeXrIfeL02Uig==
   dependencies:
     undici "^7.22.0"
 
