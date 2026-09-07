@@ -2011,13 +2011,13 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sanity/client@^8.4.0":
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-8.4.0.tgz#a993118d2c11c4b768ed5ef8ba36f80977bbb845"
-  integrity sha512-rwMtDxH3x9dc8ZiCMRDLStZoCr6MSPrH2LH4NIxWTCZ9Vz5OSgg0RolZy+ccM8p4yzK5lgC9XMF8tF6zsje0gQ==
+"@sanity/client@^8.5.0":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-8.5.0.tgz#f1531b5024107204ea46d2fd0ac0f06fbc19ab34"
+  integrity sha512-GpTdkeyMOqsuXCB74iCiGqOs7lHBELD7pgWCm+hJ0FrqXL+CIgR6ZvehPSn+O9/8964X9Nb7iFtjZpOYOydtMA==
   dependencies:
-    eventsource "^5.1.0"
-    get-it "^9.5.0"
+    eventsource "^5.1.1"
+    get-it "^9.5.2"
     obug "^2.1.4"
     rxjs "^7.8.2"
 
@@ -4917,7 +4917,7 @@ eventsource-parser@^4.1.0:
   resolved "https://registry.yarnpkg.com/eventsource-parser/-/eventsource-parser-4.1.0.tgz#5a16373feb67451c8ba5fcf25556db46152feebc"
   integrity sha512-+DHvQ1wLO//MK+1OZgcuXCbZFKgu3YjKPJt7n98rxX8vezL0ni+7s3ZQiM8bJkUEOk7MsuCycrPLj0FzUNf7Og==
 
-eventsource@^5.1.0:
+eventsource@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-5.1.1.tgz#e40fa9b09b38b5af7a8dccb800aec5cd4b3bf113"
   integrity sha512-onrlI7l612Ee3xnBqZNTq4djf6Fho/0yIpO/rYjRG/FzjMyPJquNx9SS3QyjglnVFxwxrube1XmX41zB+0Rdgw==
@@ -5327,12 +5327,12 @@ get-intrinsic@^1.2.6:
     hasown "^2.0.2"
     math-intrinsics "^1.1.0"
 
-get-it@^9.5.0:
-  version "9.5.1"
-  resolved "https://registry.yarnpkg.com/get-it/-/get-it-9.5.1.tgz#a619d674fc72f0421ca85933957f9656b5056cc9"
-  integrity sha512-XCVgepH7ROA/VEW4iaorxII3ZqQt7bqNhRNdeOklqwWsl7iGuJCGL7jxkUzcWVpK5zsYr0WaMqeXrIfeL02Uig==
+get-it@^9.5.2:
+  version "9.5.2"
+  resolved "https://registry.yarnpkg.com/get-it/-/get-it-9.5.2.tgz#b24eba94dafbeb9a368c87a62315c1499a14f372"
+  integrity sha512-n4iCIF3/STaCsEIgestecjGJ3Oa+GEIwMT91HU+5TBHQ8DIpBCS1/BXjaxS5HuYHtVMRVTFDRX2bf3+gP/MOPg==
   dependencies:
-    undici "^7.22.0"
+    undici "^7.29.0"
 
 get-own-enumerable-property-symbols@^3.0.0:
   version "3.0.2"
@@ -9950,10 +9950,10 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-undici@^7.22.0:
-  version "7.29.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-7.29.0.tgz#ae0f6f62e06e057a9cbb7b2b5fde2bb74f791b8f"
-  integrity sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==
+undici@^7.29.0:
+  version "7.29.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-7.29.1.tgz#7741c6fc8b3e1a48e30323833642bfbe841443ad"
+  integrity sha512-RYONW2MeafgYlkVOKYKkA/Ag7BmXqgIWCa8t1m0JcxrQg9pI9lEqRhAOruOBCbAohOa/gkCF+iPi9hrgvTzu6Q==
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.0"
