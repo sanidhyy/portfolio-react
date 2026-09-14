@@ -2011,13 +2011,13 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sanity/client@^8.5.0":
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-8.5.0.tgz#f1531b5024107204ea46d2fd0ac0f06fbc19ab34"
-  integrity sha512-GpTdkeyMOqsuXCB74iCiGqOs7lHBELD7pgWCm+hJ0FrqXL+CIgR6ZvehPSn+O9/8964X9Nb7iFtjZpOYOydtMA==
+"@sanity/client@^8.6.1":
+  version "8.6.1"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-8.6.1.tgz#571ba7bdc3aff8e6de1836d586ccff12708e7051"
+  integrity sha512-sYASM1fuPeCx2dZzlq3edtv1UmvizUmMLkN0x3Rkxs/NrTAikxGyOAtEuAZt25mwliqBiHsYbB0L4G6MWVgHLw==
   dependencies:
     eventsource "^5.1.1"
-    get-it "^9.5.2"
+    get-it "^9.5.4"
     obug "^2.1.4"
     rxjs "^7.8.2"
 
@@ -5327,10 +5327,10 @@ get-intrinsic@^1.2.6:
     hasown "^2.0.2"
     math-intrinsics "^1.1.0"
 
-get-it@^9.5.2:
-  version "9.5.2"
-  resolved "https://registry.yarnpkg.com/get-it/-/get-it-9.5.2.tgz#b24eba94dafbeb9a368c87a62315c1499a14f372"
-  integrity sha512-n4iCIF3/STaCsEIgestecjGJ3Oa+GEIwMT91HU+5TBHQ8DIpBCS1/BXjaxS5HuYHtVMRVTFDRX2bf3+gP/MOPg==
+get-it@^9.5.4:
+  version "9.5.4"
+  resolved "https://registry.yarnpkg.com/get-it/-/get-it-9.5.4.tgz#68754b4bec3ba608efc9a0e3c1c5c8ae5fe4914a"
+  integrity sha512-LXbU86HfKWzssHTTsQtUphDh5RB9ilOvncCPPDjaJTbli8zPIJBv4KA9EMB/Wv8GfPXy0dpulfRJzd76n7c3bg==
   dependencies:
     undici "^7.29.0"
 
