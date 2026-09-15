@@ -1,22 +1,16 @@
 {
   "name": "frontend-react",
-  "version": "0.1.0",
-  "license": "MIT",
   "private": true,
-  "author": "Sanidhya Kr. Verma",
-  "description": "Modern Portfolio App using React JS",
-  "keywords": [
-    "reactjs",
-    "react",
-    "react-portfolio",
-    "framer-motion",
-    "animations",
-    "sanity",
-    "js",
-    "javascript",
-    "html",
-    "css"
-  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "studio": "pnpm --dir backend-sanity dev",
+    "studio:build": "pnpm --dir backend-sanity build"
+  },
   "dependencies": {
     "@sanity/client": "^8.5.0",
     "@sanity/image-url": "^2.1.1",
@@ -34,12 +28,22 @@
     "react-tooltip": "^6.0.8",
     "web-vitals": "^6.2.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "devDependencies": {},
+  "packageManager": "pnpm@11.15.1",
+  "author": "Sanidhya Kr. Verma",
+  "description": "Modern Portfolio App using React JS",
+  "keywords": [
+    "reactjs",
+    "react",
+    "react-portfolio",
+    "framer-motion",
+    "animations",
+    "sanity",
+    "js",
+    "javascript",
+    "html",
+    "css"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",

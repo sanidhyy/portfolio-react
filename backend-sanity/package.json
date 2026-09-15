@@ -4,24 +4,11 @@
   "version": "1.0.0",
   "main": "package.json",
   "scripts": {
+    "dev": "sanity dev",
     "start": "sanity start",
     "build": "sanity build"
   },
   "license": "MIT",
-  "author": "Sanidhya Kr. Verma",
-  "description": "Modern Portfolio App using React JS",
-  "keywords": [
-    "reactjs",
-    "react",
-    "react-portfolio",
-    "framer-motion",
-    "animations",
-    "sanity",
-    "js",
-    "javascript",
-    "html",
-    "css"
-  ],
   "dependencies": {
     "@sanity/base": "^2.33.3",
     "@sanity/core": "^2.33.3",
@@ -46,5 +33,20 @@
     "styled-components": "^5.2.0",
     "yargs-parser": "13.1.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "packageManager": "pnpm@11.15.1",
+  "author": "Sanidhya Kr. Verma",
+  "description": "Modern Portfolio App using React JS",
+  "keywords": [
+    "reactjs",
+    "react",
+    "react-portfolio",
+    "framer-motion",
+    "animations",
+    "sanity",
+    "js",
+    "javascript",
+    "html",
+    "css"
+  ]
 }

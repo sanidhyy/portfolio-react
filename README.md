@@ -24,8 +24,8 @@ REACT_APP_SANITY_DATASET=XXXXXXXXXXXXXXXX
 REACT_APP_SANITY_TOKEN=XXXXXXXXXXXXXXXX
 ```
 
-5. Open terminal in root directory. Run `npm install` or `yarn install`.
-6. Now, `cd backend-sanity`. Run `npm install` or `yarn install` again.
+5. Open terminal in root directory. Run `npm install` or `pnpm install`.
+6. Now, `cd backend-sanity`. Run `npm install` or `pnpm install` again.
 7. Now all required packages are installed, let's setup sanity.
 8. Create an account in [sanity](https://www.sanity.io/ "Sanity").
 9. In terminal, type `sanity init` to initialize our sanity project.
@@ -44,7 +44,7 @@ REACT_APP_SANITY_TOKEN=XXXXXXXXXXXXXXXX
 
 ![Add your Portfolio Details](https://user-images.githubusercontent.com/71302066/193460855-edefd76c-9b70-4ea5-8f4f-b6e524209d5e.png "Add your Portfolio Details")
 
-16. Now app is fully configured :+1: and you can start using this app using `npm start` or `yarn start`.
+16. Now app is fully configured :+1: and you can start using this app using `npm start` or `pnpm start`.
 
 **NOTE:** Make sure you don't share these keys publicaly.
 
@@ -101,7 +101,7 @@ You can also give this repository a star to show more people and they can use th
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -109,12 +109,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `yarn test`
+### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `npm build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -124,7 +124,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### `npm eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
@@ -160,6 +160,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+### `npm build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
