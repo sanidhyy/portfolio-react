@@ -2,8 +2,8 @@ packages:
   - "backend-sanity"
 
 allowBuilds:
+  "@parcel/watcher": false
   core-js: false
   core-js-pure: false
   es5-ext: false
-  node-sass: false
   uglifyjs-webpack-plugin: false

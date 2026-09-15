@@ -6,22 +6,28 @@ import { images, links } from "../../constants";
 import "./Navbar.scss";
 
 // Navbar
+const getHashLink = () => {
+  const currentLink = window.location.hash;
+  return currentLink.length > 0
+    ? currentLink.substring(1)
+    : links.navbar_links[0];
+};
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const [activeLink, setActiveLink] = useState(links.navbar_links[0]);
+  const [activeLink, setActiveLink] = useState(getHashLink);
 
-  // set active link
-  const setLink = () => {
-    const currentLink = window.location.hash;
-    if (currentLink.length > 0) {
-      setActiveLink(currentLink.substring(1));
-    }
-  };
+  useEffect(() => {
+    const setLink = () => {
+      const currentLink = window.location.hash;
+      if (currentLink.length > 0) {
+        setActiveLink(currentLink.substring(1));
+      }
+    };
 
-  useEffect(setLink, []);
-
-  // listen hash change
-  window.addEventListener("hashchange", setLink);
+    window.addEventListener("hashchange", setLink);
+    return () => window.removeEventListener("hashchange", setLink);
+  }, []);
 
   return (
     <nav className="app__navbar">

@@ -19,9 +19,9 @@
 4. Contents of **.env**:
 
 ```
-REACT_APP_SANITY_PROJECT_ID=XXXXXXXXXXXXXXXX
-REACT_APP_SANITY_DATASET=XXXXXXXXXXXXXXXX
-REACT_APP_SANITY_TOKEN=XXXXXXXXXXXXXXXX
+VITE_SANITY_PROJECT_ID=XXXXXXXXXXXXXXXX
+VITE_SANITY_DATASET=XXXXXXXXXXXXXXXX
+VITE_SANITY_TOKEN=XXXXXXXXXXXXXXXX
 ```
 
 5. Open terminal in root directory. Run `npm install` or `pnpm install`.
@@ -31,7 +31,7 @@ REACT_APP_SANITY_TOKEN=XXXXXXXXXXXXXXXX
 9. In terminal, type `sanity init` to initialize our sanity project.
 10. Type `sanity start` to start sanity studio on localhost. URL will be shown in terminal.
 11. After going to localhost, login in with your account. Now, your account is connected with this project.
-12. To get REACT_APP_SANITY_PROJECT_ID and REACT_APP_SANITY_TOKEN, go to [sanity](https://www.sanity.io/ "Sanity").
+12. To get VITE_SANITY_PROJECT_ID and VITE_SANITY_TOKEN, go to [sanity](https://www.sanity.io/ "Sanity").
 13. Copy your project id as shown below:
 
 ![Copy your Project ID](https://user-images.githubusercontent.com/71302066/193460393-5aa9b52a-4ba9-4d4e-92cd-ec6fd422454f.png "Copy your Project ID")

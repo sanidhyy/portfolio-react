@@ -2,33 +2,39 @@
   "name": "frontend-react",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
     "studio": "pnpm --dir backend-sanity dev",
     "studio:build": "pnpm --dir backend-sanity build"
   },
   "dependencies": {
     "@sanity/client": "^8.5.0",
     "@sanity/image-url": "^2.1.1",
-    "@testing-library/react": "^15.0.7",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/user-event": "^14.6.7",
     "framer-motion": "^13.2.0",
-    "minimatch": "10.2.6",
-    "node-sass": "^9.0.0",
-    "nth-check": "3.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.7.0",
-    "react-scripts": "5.0.1",
-    "react-tooltip": "^6.0.8",
-    "web-vitals": "^6.2.1"
+    "react-tooltip": "^6.0.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.10.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.12.0",
+    "sass": "^1.104.1",
+    "vite": "^8.3.0"
+  },
   "author": "Sanidhya Kr. Verma",
   "description": "Modern Portfolio App using React JS",
   "keywords": [
@@ -43,12 +49,6 @@
     "html",
     "css"
   ],
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
