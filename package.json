@@ -29,7 +29,6 @@
     "web-vitals": "^6.2.1"
   },
   "devDependencies": {},
-  "packageManager": "pnpm@11.15.1",
   "author": "Sanidhya Kr. Verma",
   "description": "Modern Portfolio App using React JS",
   "keywords": [
