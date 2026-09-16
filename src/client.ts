@@ -1,5 +1,5 @@
 import { createClient } from "@sanity/client";
-import imageUrlBuilder from "@sanity/image-url";
+import imageUrlBuilder, { type SanityImageSource } from "@sanity/image-url";
 
 // sanity client
 export const client = createClient({
@@ -15,4 +15,4 @@ export const client = createClient({
 const builder = imageUrlBuilder(client);
 
 // export image
-export const urlFor = (source) => builder.image(source);
+export const urlFor = (source: SanityImageSource) => builder.image(source).url();

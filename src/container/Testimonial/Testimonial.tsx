@@ -1,45 +1,41 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
+import type { Brand, Testimonial as TestimonialType } from "../../types";
 import "./Testimonial.scss";
 
-// Testimonial
 const Testimonial = () => {
-  const [brands, setBrands] = useState([]);
-  const [testimonials, setTestimonials] = useState([]);
+  const [brands, setBrands] = useState<Brand[]>([]);
+  const [testimonials, setTestimonials] = useState<TestimonialType[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // handle btn click
-  const handleClick = (index) => {
+  const handleClick = (index: number) => {
     setCurrentIndex(index);
   };
 
-  // fetch testimonials data
   useEffect(() => {
     const query = '*[_type == "testimonials"]';
     const brandsQuery = '*[_type == "brands"]';
 
-    client.fetch(query).then((data) => setTestimonials(data));
-    client.fetch(brandsQuery).then((data) => setBrands(data));
+    client
+      .fetch<TestimonialType[]>(query)
+      .then((data) => setTestimonials(data));
+    client.fetch<Brand[]>(brandsQuery).then((data) => setBrands(data));
   }, []);
 
-  // current testimonial
   const test = testimonials[currentIndex];
 
   return (
     <>
-      {testimonials.length && (
+      {testimonials.length > 0 && test && (
         <>
           <div className="app__testimonial-item app__flex">
-            {/* customer image */}
             <img src={urlFor(test.imgurl)} alt="testimonial" />
             <div className="app__testimonial-content">
-              {/* customer feedback */}
               <p className="p-text">{test.feedback}</p>
-              {/* customer info */}
               <div>
                 <h4 className="bold-text">{test.name}</h4>
                 <h5 className="p-text">{test.company}</h5>
@@ -48,7 +44,6 @@ const Testimonial = () => {
           </div>
 
           <div className="app__testimonial-btns app__flex">
-            {/* Left */}
             <div
               className="app__flex"
               onClick={() =>
@@ -61,7 +56,6 @@ const Testimonial = () => {
             >
               <HiChevronLeft />
             </div>
-            {/* Right */}
             <div
               className="app__flex"
               onClick={() =>
@@ -78,7 +72,6 @@ const Testimonial = () => {
         </>
       )}
 
-      {/* Brands */}
       <div className="app__testimonial-brands app__flex">
         {brands.map((brand) => (
           <motion.div

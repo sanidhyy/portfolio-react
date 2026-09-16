@@ -1,27 +1,23 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
 import "./Header.scss";
 
-// scale variant
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
     opacity: [0, 1],
     transition: {
       duration: 1,
-      ease: "easeInOut",
+      ease: "easeInOut" as const,
     },
   },
 };
 
-// Header
 const Header = () => {
   return (
     <div id="home" className="app__header app__flex">
-      {/* About Me */}
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -43,7 +39,6 @@ const Header = () => {
         </div>
       </motion.div>
 
-      {/* My Profile */}
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
@@ -60,7 +55,6 @@ const Header = () => {
         />
       </motion.div>
 
-      {/* My Skills */}
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}

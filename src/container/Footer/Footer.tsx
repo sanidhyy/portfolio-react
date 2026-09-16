@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState, type ChangeEvent } from "react";
 
 import { images, links } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
+import type { Contact } from "../../types";
 import "./Footer.scss";
 
-// Footer
 const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,33 +17,34 @@ const Footer = () => {
 
   const { name, email, message } = formData;
 
-  // handle input change
-  const handleChangeInput = (e) => {
-    const { name, value } = e.target;
+  const handleChangeInput = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name: fieldName, value } = e.target;
 
-    setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [fieldName]: value });
   };
 
-  // Check if string is empty or contains whitespaces
-  const isEmptyOrSpaces = (str) => {
+  const isEmptyOrSpaces = (str: string) => {
     return /^\s*$/.test(str);
   };
 
-  // email validation
-  const isInvalidEmail = (email) => {
-    const regex = new RegExp( // eslint-disable-next-line
-      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+  const isInvalidEmail = (value: string) => {
+    const regex = new RegExp(
+      /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i
     );
-    return !email || regex.test(email) === false;
+    return !value || regex.test(value) === false;
   };
 
-  // handle submit
   const handleSubmit = () => {
     const name_in = document.getElementById("name");
     const email_in = document.getElementById("email");
     const message_in = document.getElementById("message");
 
-    // validate name
+    if (!name_in || !email_in || !message_in) {
+      return;
+    }
+
     if (isEmptyOrSpaces(name) || name.length < 3) {
       name_in.style.border = "1px solid #ff8989";
       return;
@@ -51,7 +52,6 @@ const Footer = () => {
       name_in.style.border = "none";
     }
 
-    // validate email
     if (isInvalidEmail(email)) {
       email_in.style.border = "1px solid #ff8989";
       return;
@@ -59,7 +59,6 @@ const Footer = () => {
       email_in.style.border = "none";
     }
 
-    // validate messsage
     if (isEmptyOrSpaces(message) || message.length < 3) {
       message_in.style.border = "1px solid #ff8989";
       return;
@@ -69,14 +68,13 @@ const Footer = () => {
 
     setLoading(true);
 
-    const contact = {
+    const contact: Contact = {
       _type: "contact",
-      name: name,
-      email: email,
-      message: message,
+      name,
+      email,
+      message,
     };
 
-    // submit form to sanity
     client.create(contact).then(() => {
       setLoading(false);
       setIsFormSubmitted(true);
@@ -85,10 +83,8 @@ const Footer = () => {
 
   return (
     <>
-      {/* Head */}
       <h2 className="head-text">Take a coffee &amp; chat with me.</h2>
 
-      {/* Email */}
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="Email" />
@@ -97,7 +93,6 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Phone */}
         <div className="app__footer-card">
           <img src={images.mobile} alt="Mobile" />
           <a href={`tel:${links.contact_links.email}`} className="p-text">
@@ -108,7 +103,6 @@ const Footer = () => {
 
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
-          {/* Name */}
           <div className="app__flex">
             <input
               type="text"
@@ -120,7 +114,6 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          {/* Email */}
           <div className="app__flex">
             <input
               type="email"
@@ -132,7 +125,6 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          {/* Your Messages */}
           <div>
             <textarea
               className="p-text"
@@ -143,13 +135,11 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          {/* Send Message */}
           <button type="button" className="p-text" onClick={handleSubmit}>
             {loading ? "Sending..." : "Send Message"}
           </button>
         </div>
       ) : (
-        // Thank You Message
         <div className="app__footer-thankyou app__flex">
           <p className="bold-text">Thank You for getting in touch.</p>
         </div>

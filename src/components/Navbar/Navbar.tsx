@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 import { images, links } from "../../constants";
 import "./Navbar.scss";
 
-// Navbar
 const getHashLink = () => {
   const currentLink = window.location.hash;
   return currentLink.length > 0
@@ -32,13 +31,11 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        {/* Logo */}
         <a href={`#${links.navbar_links[0]}`} title="Micael">
           <img src={images.logo} alt="Micael" />
         </a>
       </div>
       <ul className="app__navbar-links">
-        {/* Navbar links */}
         {links.navbar_links.map((item) => (
           <li key={`link-${item}`} className="app__flex p-text">
             <div />
@@ -52,7 +49,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      {/* Source Code */}
       <button
         type="button"
         className="app__navbar-btn"
@@ -63,10 +59,8 @@ const Navbar = () => {
       </button>
 
       <div className="app__navbar-menu">
-        {/* Toggle Menu */}
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
-        {/* Navbar Menu [MOBILE] */}
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
@@ -86,7 +80,6 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              {/* Source Code [MOBILE] */}
               <li key="source-code">
                 <a
                   href={links.source_code}

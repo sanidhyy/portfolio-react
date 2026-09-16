@@ -1,19 +1,19 @@
-import React from "react";
+import type { ComponentType } from "react";
 import { NavigationDots, SocialMedia } from "../components";
 
-// App Wrap (Higher Order Component)
-const AppWrap = (Component, idName, classNames) =>
-  function HOC() {
+const AppWrap = <P extends object>(
+  Component: ComponentType<P>,
+  idName: string,
+  classNames = ""
+) =>
+  function HOC(props: P) {
     return (
       <div id={idName} className={`app__container ${classNames}`}>
-        {/* Social Media */}
         <SocialMedia />
 
         <div className="app__wrapper app__flex">
-          {/* Main Component */}
-          <Component />
+          <Component {...props} />
 
-          {/* Copyright */}
           <div className="copyright">
             <p className="p-text">
               &copy; {new Date().getFullYear()} <span>MICAEL</span>
@@ -21,7 +21,6 @@ const AppWrap = (Component, idName, classNames) =>
             <p className="p-text">All rights reserved</p>
           </div>
         </div>
-        {/* Navigation Dots */}
         <NavigationDots active={idName} />
       </div>
     );
