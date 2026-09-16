@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { Tooltip } from "react-tooltip";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
+import { urlFor, fetchQuery } from "../../client";
 import type { Experience, Skill } from "../../types";
 import "./Skills.scss";
 
@@ -12,11 +12,8 @@ const Skills = () => {
   const [skills, setSkills] = useState<Skill[]>([]);
 
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
-
-    client.fetch<Experience[]>(query).then((data) => setExperience(data));
-    client.fetch<Skill[]>(skillsQuery).then((data) => setSkills(data));
+    fetchQuery<Experience[]>("experiences").then((data) => setExperience(data));
+    fetchQuery<Skill[]>("skills").then((data) => setSkills(data));
   }, []);
 
   return (

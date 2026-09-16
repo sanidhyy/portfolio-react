@@ -20,7 +20,7 @@
 
 ```
 VITE_SANITY_PROJECT_ID=XXXXXXXXXXXXXXXX
-VITE_SANITY_TOKEN=XXXXXXXXXXXXXXXX
+SANITY_TOKEN=XXXXXXXXXXXXXXXX
 ```
 
 5. Open a terminal in the root directory and run `npm install` or `pnpm install`. This installs both the portfolio app and Sanity Studio (workspace).
@@ -36,9 +36,9 @@ VITE_SANITY_TOKEN=XXXXXXXXXXXXXXXX
 
 ![Add your Portfolio Details](https://user-images.githubusercontent.com/71302066/193460855-edefd76c-9b70-4ea5-8f4f-b6e524209d5e.png "Add your Portfolio Details")
 
-10. Start the app with `npm run dev` or `pnpm dev`.
+10. Start the app with `npm run dev` or `pnpm dev` (runs [Netlify Dev](https://docs.netlify.com/cli/get-started/), which serves Vite and the functions together).
 
-**NOTE:** Make sure you don't share these keys publicaly.
+**NOTE:** Make sure you don't share the Sanity token publicly.
 
 ### :raising_hand: Need Help?
 
@@ -97,14 +97,14 @@ In the project directory, you can run:
 
 ### `npm run dev` / `pnpm dev`
 
-Runs the app in development mode with Vite.\
-Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+Runs the app and Netlify Functions together via `netlify dev`.
+Open [http://localhost:8888](http://localhost:8888) to view it in your browser.
 
 The page will reload when you make changes.
 
 ### `npm run lint` / `pnpm lint`
 
-Runs ESLint on the frontend.
+Runs ESLint.
 
 ### `npm run build` / `pnpm build`
 

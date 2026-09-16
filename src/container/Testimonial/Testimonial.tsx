@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
+import { urlFor, fetchQuery } from "../../client";
 import type { Brand, Testimonial as TestimonialType } from "../../types";
 import "./Testimonial.scss";
 
@@ -17,13 +17,10 @@ const Testimonial = () => {
   };
 
   useEffect(() => {
-    const query = '*[_type == "testimonials"]';
-    const brandsQuery = '*[_type == "brands"]';
-
-    client
-      .fetch<TestimonialType[]>(query)
-      .then((data) => setTestimonials(data));
-    client.fetch<Brand[]>(brandsQuery).then((data) => setBrands(data));
+    fetchQuery<TestimonialType[]>("testimonials").then((data) =>
+      setTestimonials(data)
+    );
+    fetchQuery<Brand[]>("brands").then((data) => setBrands(data));
   }, []);
 
   const test = testimonials[currentIndex];

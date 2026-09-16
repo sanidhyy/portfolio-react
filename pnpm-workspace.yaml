@@ -6,17 +6,20 @@ allowBuilds:
   core-js: false
   core-js-pure: false
   es5-ext: false
-  esbuild: true
+  esbuild: false
+  netlify-cli: false
+  sharp: false
   uglifyjs-webpack-plugin: false
+  unix-dgram: false
 
 minimumReleaseAgeExclude:
-  - '@sanity/access-ui@6.14.0'
-  - '@sanity/client@8.6.2'
-  - '@sanity/diff@6.14.0'
-  - '@sanity/mutator@6.14.0'
-  - '@sanity/schema@6.14.0'
-  - '@sanity/types@6.14.0'
-  - '@sanity/util@6.14.0'
-  - '@sanity/validation@6.14.0'
-  - '@sanity/vision@6.14.0'
+  - "@sanity/access-ui@6.14.0"
+  - "@sanity/client@8.6.2"
+  - "@sanity/diff@6.14.0"
+  - "@sanity/mutator@6.14.0"
+  - "@sanity/schema@6.14.0"
+  - "@sanity/types@6.14.0"
+  - "@sanity/util@6.14.0"
+  - "@sanity/validation@6.14.0"
+  - "@sanity/vision@6.14.0"
   - sanity@6.14.0

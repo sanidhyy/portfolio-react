@@ -2,8 +2,7 @@ import { useState, type ChangeEvent } from "react";
 
 import { images, links } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { client } from "../../client";
-import type { Contact } from "../../types";
+import { submitContact } from "../../client";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -68,17 +67,16 @@ const Footer = () => {
 
     setLoading(true);
 
-    const contact: Contact = {
-      _type: "contact",
-      name,
-      email,
-      message,
-    };
-
-    client.create(contact).then(() => {
-      setLoading(false);
-      setIsFormSubmitted(true);
-    });
+    submitContact({ name, email, message })
+      .then(() => {
+        setIsFormSubmitted(true);
+      })
+      .catch(() => {
+        // Keep the form visible so the user can retry
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   return (

@@ -3,7 +3,7 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "motion/react";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
+import { urlFor, fetchQuery } from "../../client";
 import type { Work as WorkType } from "../../types";
 import "./Work.scss";
 
@@ -14,9 +14,7 @@ const Work = () => {
   const [filterWork, setFilterWork] = useState<WorkType[]>([]);
 
   useEffect(() => {
-    const query = '*[_type == "works"]';
-
-    client.fetch<WorkType[]>(query).then((data) => {
+    fetchQuery<WorkType[]>("works").then((data) => {
       setWorks(data);
       setFilterWork(data);
     });

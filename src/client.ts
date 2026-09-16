@@ -1,22 +1,46 @@
-import { createClient } from "@sanity/client";
 import {
   createImageUrlBuilder,
   type SanityImageSource,
 } from "@sanity/image-url";
 
-// sanity client
-export const client = createClient({
+const builder = createImageUrlBuilder({
   projectId: import.meta.env.VITE_SANITY_PROJECT_ID,
   dataset: "production",
-  apiVersion: "2022-02-01",
-  useCdn: true,
-  token: import.meta.env.VITE_SANITY_TOKEN,
-  ignoreBrowserTokenWarning: true,
 });
 
-// sanity img url builder
-const builder = createImageUrlBuilder(client);
-
-// export image
 export const urlFor = (source: SanityImageSource) =>
   builder.image(source).url();
+
+export type QueryType =
+  | "abouts"
+  | "works"
+  | "experiences"
+  | "skills"
+  | "testimonials"
+  | "brands";
+
+export async function fetchQuery<T>(type: QueryType): Promise<T> {
+  const res = await fetch(`/api/sanity/query?type=${encodeURIComponent(type)}`);
+
+  if (!res.ok) {
+    throw new Error(`Failed to fetch ${type}`);
+  }
+
+  return res.json() as Promise<T>;
+}
+
+export async function submitContact(data: {
+  name: string;
+  email: string;
+  message: string;
+}): Promise<void> {
+  const res = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to submit contact form");
+  }
+}

@@ -12,10 +12,10 @@
     "resolveJsonModule": true,
     "useDefineForClassFields": true,
     "noUncheckedSideEffectImports": true,
-    "types": ["vite/client"],
+    "types": ["vite/client", "node"],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "vite.config.ts"]
+  "include": ["src", "vite.config.ts", "netlify"]
 }
