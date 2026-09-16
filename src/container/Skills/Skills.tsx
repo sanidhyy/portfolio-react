@@ -1,5 +1,5 @@
 import { Fragment, useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { Tooltip } from "react-tooltip";
 
 import { AppWrap, MotionWrap } from "../../wrapper";

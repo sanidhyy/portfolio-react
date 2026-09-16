@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const MotionWrap = <P extends object>(
   Component: ComponentType<P>,
