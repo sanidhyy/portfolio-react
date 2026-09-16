@@ -10,10 +10,10 @@
     "build": "sanity build"
   },
   "dependencies": {
-    "@sanity/vision": "4.22.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "sanity": "4.22.1",
+    "@sanity/vision": "5.31.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "sanity": "5.31.2",
     "styled-components": "^6.5.3"
   },
   "description": "Modern Portfolio App using React JS",
