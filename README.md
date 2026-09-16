@@ -13,7 +13,7 @@
 
 ## ⚠️ Before you start
 
-1. Make sure **Git** and **Node.js 22.12+** are installed.
+1. Make sure **Git** and **Node.js** are installed.
 2. Clone this repository to your local computer.
 3. Create a `.env` file in the root folder.
 4. Contents of **.env**:
@@ -24,11 +24,9 @@ VITE_SANITY_DATASET=XXXXXXXXXXXXXXXX
 VITE_SANITY_TOKEN=XXXXXXXXXXXXXXXX
 ```
 
-If you previously used `REACT_APP_SANITY_*` (including on Netlify), rename those variables to `VITE_SANITY_*` or the frontend will not load Sanity content.
-
-5. Open a terminal in the root directory and run `pnpm install`. This installs both the portfolio app and Sanity Studio (workspace).
+5. Open a terminal in the root directory and run `npm install` or `pnpm install`. This installs both the portfolio app and Sanity Studio (workspace).
 6. Create an account in [Sanity](https://www.sanity.io/ "Sanity").
-7. Run `pnpm studio` to start Sanity Studio. The local URL will be shown in the terminal.
+7. Run `npm run studio` or `pnpm studio` to start Sanity Studio. The local URL will be shown in the terminal.
 8. Log in, then copy your project ID and create an API token under the API tab. You will not be able to copy the token later.
 
 ![Copy your Project ID](https://user-images.githubusercontent.com/71302066/193460393-5aa9b52a-4ba9-4d4e-92cd-ec6fd422454f.png "Copy your Project ID")
@@ -39,7 +37,7 @@ If you previously used `REACT_APP_SANITY_*` (including on Netlify), rename those
 
 ![Add your Portfolio Details](https://user-images.githubusercontent.com/71302066/193460855-edefd76c-9b70-4ea5-8f4f-b6e524209d5e.png "Add your Portfolio Details")
 
-10. Start the app with `pnpm start` or `pnpm dev`.
+10. Start the app with `npm run dev` or `pnpm dev`.
 
 **NOTE:** Make sure you don't share these keys publicaly.
 
@@ -98,30 +96,30 @@ You can also give this repository a star to show more people and they can use th
 
 In the project directory, you can run:
 
-### `pnpm start` / `pnpm dev`
+### `npm run dev` / `pnpm dev`
 
 Runs the app in development mode with Vite.\
 Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 The page will reload when you make changes.
 
-### `pnpm lint`
+### `npm run lint` / `pnpm lint`
 
 Runs ESLint on the frontend.
 
-### `pnpm build`
+### `npm run build` / `pnpm build`
 
 Typechecks with TypeScript 6, then builds the app for production to the `build` folder.
 
-### `pnpm preview`
+### `npm run preview` / `pnpm preview`
 
 Serves the production build locally.
 
-### `pnpm studio`
+### `npm run studio` / `pnpm studio`
 
 Starts Sanity Studio in development mode.
 
-### `pnpm studio:build`
+### `npm run studio:build` / `pnpm studio:build`
 
 Builds Sanity Studio for production.
 
