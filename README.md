@@ -13,9 +13,9 @@
 
 ## ⚠️ Before you start
 
-1. Make sure **Git** and **NodeJS** is installed
+1. Make sure **Git** and **Node.js 22.12+** are installed.
 2. Clone this repository to your local computer.
-3. Create .env file in root folder.
+3. Create a `.env` file in the root folder.
 4. Contents of **.env**:
 
 ```
@@ -24,27 +24,22 @@ VITE_SANITY_DATASET=XXXXXXXXXXXXXXXX
 VITE_SANITY_TOKEN=XXXXXXXXXXXXXXXX
 ```
 
-5. Open terminal in root directory. Run `npm install` or `pnpm install`.
-6. Now, `cd backend-sanity`. Run `npm install` or `pnpm install` again.
-7. Now all required packages are installed, let's setup sanity.
-8. Create an account in [sanity](https://www.sanity.io/ "Sanity").
-9. In terminal, type `sanity init` to initialize our sanity project.
-10. Type `sanity start` to start sanity studio on localhost. URL will be shown in terminal.
-11. After going to localhost, login in with your account. Now, your account is connected with this project.
-12. To get VITE_SANITY_PROJECT_ID and VITE_SANITY_TOKEN, go to [sanity](https://www.sanity.io/ "Sanity").
-13. Copy your project id as shown below:
+If you previously used `REACT_APP_SANITY_*` (including on Netlify), rename those variables to `VITE_SANITY_*` or the frontend will not load Sanity content.
+
+5. Open a terminal in the root directory and run `pnpm install`. This installs both the portfolio app and Sanity Studio (workspace).
+6. Create an account in [Sanity](https://www.sanity.io/ "Sanity").
+7. Run `pnpm studio` to start Sanity Studio. The local URL will be shown in the terminal.
+8. Log in, then copy your project ID and create an API token under the API tab. You will not be able to copy the token later.
 
 ![Copy your Project ID](https://user-images.githubusercontent.com/71302066/193460393-5aa9b52a-4ba9-4d4e-92cd-ec6fd422454f.png "Copy your Project ID")
 
-14. Under API Tab, go to tokens section and create a token. You can name it whatever you want. Just Don't forget to copy your project token. You will not be able to copy later.
-
 ![Copy your Project Token](https://user-images.githubusercontent.com/71302066/193460607-5c464f6e-b664-4fac-86db-d2ec1312bec4.jpg "Copy your Project Token")
 
-15. Now, you add your portfolio details to your project through sanity localhost.
+9. Add your portfolio details through Sanity Studio.
 
 ![Add your Portfolio Details](https://user-images.githubusercontent.com/71302066/193460855-edefd76c-9b70-4ea5-8f4f-b6e524209d5e.png "Add your Portfolio Details")
 
-16. Now app is fully configured :+1: and you can start using this app using `npm start` or `pnpm start`.
+10. Start the app with `pnpm start` or `pnpm dev`.
 
 **NOTE:** Make sure you don't share these keys publicaly.
 
@@ -68,9 +63,11 @@ If you run into issues during installation or setup:
 
 ## :gear: Built with
 
-[<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" width="150" height="40" />](https://www.javascript.com/ "JavaScript")
+[<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" width="150" height="40" />](https://www.typescriptlang.org/ "TypeScript")
 
 [<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" width="150" />](https://reactjs.org/ "React JS")
+
+[<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" width="150" height="40" />](https://vite.dev/ "Vite")
 
 [<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" width="150" height="40" />](https://sass-lang.com/ "SASS")
 
@@ -101,65 +98,33 @@ You can also give this repository a star to show more people and they can use th
 
 In the project directory, you can run:
 
-### `npm start`
+### `pnpm start` / `pnpm dev`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in development mode with Vite.\
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes.
 
-### `npm test`
+### `pnpm lint`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs ESLint on the frontend.
 
-### `npm build`
+### `pnpm build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Typechecks with TypeScript 6, then builds the app for production to the `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `pnpm preview`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Serves the production build locally.
 
-### `npm eject`
+### `pnpm studio`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Starts Sanity Studio in development mode.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `pnpm studio:build`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Builds Sanity Studio for production.
 
 ## :page_with_curl: Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can learn more in the [Vite documentation](https://vite.dev/guide/) and the [React documentation](https://react.dev/).

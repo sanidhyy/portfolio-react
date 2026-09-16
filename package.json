@@ -45,6 +45,8 @@
     "reactjs",
     "react",
     "react-portfolio",
+    "vite",
+    "typescript",
     "framer-motion",
     "animations",
     "sanity",
