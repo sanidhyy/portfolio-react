@@ -12,6 +12,8 @@
 # production
 /build
 /dist
+/backend-sanity/dist
+/backend-sanity/.sanity
 
 # misc
 .DS_Store

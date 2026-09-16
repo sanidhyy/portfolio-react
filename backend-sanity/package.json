@@ -2,50 +2,20 @@
   "name": "react-portfolio",
   "private": true,
   "version": "1.0.0",
-  "main": "package.json",
+  "type": "module",
+  "license": "MIT",
   "scripts": {
     "dev": "sanity dev",
     "start": "sanity start",
     "build": "sanity build"
   },
-  "license": "MIT",
   "dependencies": {
-    "@sanity/base": "^2.33.3",
-    "@sanity/core": "^2.33.3",
-    "@sanity/default-layout": "^2.33.3",
-    "@sanity/default-login": "^2.33.3",
-    "@sanity/desk-tool": "^2.33.3",
-    "@sanity/eslint-config-studio": "^2.0.0",
-    "@sanity/vision": "^2.33.3",
-    "ajv": "8.18.0",
-    "color-string": "1.5.5",
-    "eslint": "^9.26.0",
-    "glob-parent": "5.1.2",
-    "jsdom": "16.5.0",
-    "json5": "2.2.2",
-    "loader-utils": "2.0.4",
-    "mem": "4.0.0",
-    "nth-check": "2.0.1",
-    "postcss": "8.5.23",
-    "prop-types": "^15.7",
-    "react": "^17.0",
-    "react-dom": "^17.0",
-    "styled-components": "^5.2.0",
-    "yargs-parser": "13.1.2"
+    "@sanity/vision": "3.99.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sanity": "3.99.0",
+    "styled-components": "^6.5.3"
   },
-  "devDependencies": {},
-  "author": "Sanidhya Kr. Verma",
   "description": "Modern Portfolio App using React JS",
-  "keywords": [
-    "reactjs",
-    "react",
-    "react-portfolio",
-    "framer-motion",
-    "animations",
-    "sanity",
-    "js",
-    "javascript",
-    "html",
-    "css"
-  ]
+  "author": "Sanidhya Kr. Verma"
 }
