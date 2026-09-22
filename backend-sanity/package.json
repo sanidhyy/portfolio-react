@@ -13,7 +13,7 @@
     "@sanity/vision": "6.15.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
-    "sanity": "6.14.0",
+    "sanity": "6.15.0",
     "styled-components": "^6.5.3"
   },
   "description": "Modern Portfolio App using React JS",
