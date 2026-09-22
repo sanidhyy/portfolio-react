@@ -79,8 +79,8 @@ importers:
   backend-sanity:
     dependencies:
       '@sanity/vision':
-        specifier: 6.14.0
-        version: 6.14.0(84b5b5e17c51a513852b6982e283dc1a)
+        specifier: 6.15.0
+        version: 6.15.0(84b5b5e17c51a513852b6982e283dc1a)
       react:
         specifier: 19.3.0
         version: 19.3.0
@@ -2938,8 +2938,8 @@ packages:
     resolution: {integrity: sha512-2cTpu4/35be9lqoKPv8cHaxC4oO6S9d/RXAirl8KSpz7bX1SslSv2rbLsqEFsqJPJ4zgtYUWXn45sxTnDzBFCA==}
     engines: {node: '>=22.12'}
 
-  '@sanity/vision@6.14.0':
-    resolution: {integrity: sha512-96Wdr8BbA2NQRyyBZTG2nWrrgTOYJVT7epIQeQMNVlkpya3TGawKTL/GsRdEh0Su/ZrRctA/4bzMrKtc25lG4g==}
+  '@sanity/vision@6.15.0':
+    resolution: {integrity: sha512-SDNRBkAqN9Kszx/LtF6UEyePMiZ3Ozh537TcvxXK8ZA5rUMGwie6r6Io+10WAifBJRtoA+s7Twh0AzVi2brQtQ==}
     engines: {node: '>=22.12'}
     peerDependencies:
       react: ^19.2.2
@@ -10958,7 +10958,7 @@ snapshots:
     dependencies:
       '@inquirer/prompts': 8.7.2(@types/node@26.6.1)
       '@oclif/core': 4.14.0
-      '@sanity/client': 8.6.1
+      '@sanity/client': 8.6.2
       boxen: 8.0.1
       empathic: 2.0.1
       get-it: 9.5.4
@@ -11338,7 +11338,7 @@ snapshots:
       '@sanity/blueprints-parser': 0.5.0
       '@sanity/cli-build': 5.3.1(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(@noble/hashes@2.4.0)(@types/node@26.6.1)(@types/react@19.3.0)(esbuild@0.28.2)(jiti@2.7.0)(rolldown@1.2.8)(sass@1.104.1)(terser@5.51.2)(tsx@4.23.13)(typescript@6.0.3)(yaml@2.9.1)
       '@sanity/cli-core': 3.7.0(@noble/hashes@2.4.0)(@types/node@26.6.1)(esbuild@0.28.2)(sass@1.104.1)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1)
-      '@sanity/client': 8.6.1
+      '@sanity/client': 8.6.2
       adm-zip: 0.6.1
       array-treeify: 0.2.0
       cardinal: 2.1.1
@@ -11490,7 +11490,7 @@ snapshots:
 
   '@sanity/types@6.13.2(@types/react@19.3.0)':
     dependencies:
-      '@sanity/client': 8.6.1
+      '@sanity/client': 8.6.2
       '@sanity/media-library-types': 1.7.0(@sanity/types@6.13.2(@types/react@19.3.0))
       '@types/react': 19.3.0
     transitivePeerDependencies:
@@ -11536,7 +11536,7 @@ snapshots:
     dependencies:
       '@date-fns/tz': 1.5.0
       '@date-fns/utc': 2.1.1
-      '@sanity/client': 8.6.1
+      '@sanity/client': 8.6.2
       '@sanity/types': 6.13.2(@types/react@19.3.0)
       date-fns: 4.4.0
       get-it: 9.5.4
@@ -11578,7 +11578,7 @@ snapshots:
       - typescript
       - vitest
 
-  '@sanity/vision@6.14.0(84b5b5e17c51a513852b6982e283dc1a)':
+  '@sanity/vision@6.15.0(84b5b5e17c51a513852b6982e283dc1a)':
     dependencies:
       '@codemirror/autocomplete': 6.20.3
       '@codemirror/commands': 6.11.0
@@ -11590,7 +11590,7 @@ snapshots:
       '@lezer/highlight': 1.2.3
       '@rexxars/react-json-inspector': 9.0.1(react@19.3.0)
       '@rexxars/react-split-pane': 1.0.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
-      '@sanity/client': 8.6.1
+      '@sanity/client': 8.6.2
       '@sanity/color': 3.0.8
       '@sanity/icons': 5.2.2(react@19.3.0)
       '@sanity/lezer-groq': 1.0.4
@@ -11665,7 +11665,7 @@ snapshots:
   '@sanity/workbench@0.1.0-alpha.45(@sanity/sdk@3.1.0(@types/react@19.3.0)(immer@10.2.0)(react@19.3.0)(use-sync-external-store@1.7.0(react@19.3.0))(xstate@5.33.0))(react@19.3.0)(xstate@5.33.0)':
     dependencies:
       '@module-federation/runtime': 2.9.0
-      '@sanity/client': 8.6.1
+      '@sanity/client': 8.6.2
       '@sanity/color': 3.0.8
       '@sanity/sdk': 3.1.0(@types/react@19.3.0)(immer@10.2.0)(react@19.3.0)(use-sync-external-store@1.7.0(react@19.3.0))(xstate@5.33.0)
       '@sanity/telemetry': 1.1.0(react@19.3.0)
