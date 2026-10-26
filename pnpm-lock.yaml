@@ -34,8 +34,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.12.0(jiti@2.7.0)(supports-color@11.0.0))
       '@netlify/functions':
-        specifier: ^6.0.0
-        version: 6.0.0
+        specifier: ^6.0.3
+        version: 6.0.3
       '@types/node':
         specifier: ^26.6.4
         version: 26.6.4
@@ -1835,12 +1835,12 @@ packages:
     resolution: {integrity: sha512-/XJWnO+YrKLT5mnFTENl43oIQsoXlTxQz6aapN+f+7y1NdTL9mF2D3wvKkw2+V642oiNLD0L4NG6oUeX86fADQ==}
     engines: {node: '>=22.12.0'}
 
-  '@netlify/functions@6.0.0':
-    resolution: {integrity: sha512-Pee+FoFnAtdejTkl62a7mZxj6Wx4eqVNuYyDc5T4XPJN9GaAWaUf4cZQFlf2m4Fqq0HoghjtcPKo+BZviVPPKA==}
-    engines: {node: '>=22.12.0'}
-
   '@netlify/functions@6.0.2':
     resolution: {integrity: sha512-JqbPgAOt2GAwzCEitdEWAHOn6AkZ0Rna401wdAyuDIBiDv9M03b3Cu5mGH7/eHOmIXfZIcN1pG35flHjfu6asQ==}
+    engines: {node: '>=22.12.0'}
+
+  '@netlify/functions@6.0.3':
+    resolution: {integrity: sha512-6KHpsR2L4VQL2gMm3VvG46xBNTga/SbOziluInR0++gkvOuQ/T2pxsxf2Rys5wOikpNY3Zv1IoE52/pWBJjZ9Q==}
     engines: {node: '>=22.12.0'}
 
   '@netlify/git-utils@7.1.1':
@@ -2005,12 +2005,12 @@ packages:
     resolution: {integrity: sha512-8/g0Pt6y6wXj5Ia5eeYLiXhRfWeqZXGXpGFeCiiQdUOem+FPtXdA4+YdGxqzWc7D0AvptKSO01KGeeVWHSu8Kg==}
     engines: {node: ^18.14.0 || >=20}
 
-  '@netlify/types@3.0.0':
-    resolution: {integrity: sha512-zRCidsQgI4CZWrZB/kmwdPf0QbSNljakfNSLizFvrsSA3UcUrTWSBNMVKmZnob92/8ESeUN0ewXLOlffJU+ATQ==}
-    engines: {node: '>=22.12.0'}
-
   '@netlify/types@3.2.0':
     resolution: {integrity: sha512-PVvY1EEN9i2Er0LQoiyNG7i/BnwnttLuZqIkBnhL2Jrcj3P5N/NcGkv1i20MJ2ngNGSPQcT7tagDmF3V6BsdWg==}
+    engines: {node: '>=22.12.0'}
+
+  '@netlify/types@3.3.0':
+    resolution: {integrity: sha512-u/uh0vOFslJsTcG8nnynAKnTpVIakXbv3mkBG9DTqKZrDEzmfLKDZ3I7evHA3/CYUmNB24pNrzlHj2nIsqEwzg==}
     engines: {node: '>=22.12.0'}
 
   '@netlify/zip-it-and-ship-it@16.0.0':
@@ -9914,13 +9914,13 @@ snapshots:
       - rollup
       - supports-color
 
-  '@netlify/functions@6.0.0':
-    dependencies:
-      '@netlify/types': 3.0.0
-
   '@netlify/functions@6.0.2':
     dependencies:
       '@netlify/types': 3.2.0
+
+  '@netlify/functions@6.0.3':
+    dependencies:
+      '@netlify/types': 3.3.0
 
   '@netlify/git-utils@7.1.1':
     dependencies:
@@ -10096,9 +10096,9 @@ snapshots:
 
   '@netlify/types@2.8.0': {}
 
-  '@netlify/types@3.0.0': {}
-
   '@netlify/types@3.2.0': {}
+
+  '@netlify/types@3.3.0': {}
 
   '@netlify/zip-it-and-ship-it@16.0.0(supports-color@11.0.0)':
     dependencies:
