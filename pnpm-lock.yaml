@@ -27,8 +27,8 @@ importers:
         specifier: ^5.7.0
         version: 5.7.0(react@19.3.1)
       react-tooltip:
-        specifier: ^6.0.8
-        version: 6.0.8(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        specifier: ^6.0.9
+        version: 6.0.9(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -6424,8 +6424,8 @@ packages:
       react: ^19.2
       rxjs: ^7.2
 
-  react-tooltip@6.0.8:
-    resolution: {integrity: sha512-VPjtBPyoFwq72QVE6GYB/LtfEg/mnFBHqL0nD0oNNmjH8EZYFyBwgnFKNCOp5zCte45k1weXjKc0wXE6NICpfg==}
+  react-tooltip@6.0.9:
+    resolution: {integrity: sha512-4GUhb4vqCr7fuK3D2W8TtmuCfTGLxJ3YIrgYVDGyuvk05215/B22qnc6iKQfnU3T2fqh3Op7VuKXrdV2+f+jHQ==}
     peerDependencies:
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
@@ -15390,7 +15390,7 @@ snapshots:
       react: 19.3.1
       rxjs: 7.8.2
 
-  react-tooltip@6.0.8(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
+  react-tooltip@6.0.9(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
     dependencies:
       '@floating-ui/dom': 1.7.6
       clsx: 2.1.1
