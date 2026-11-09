@@ -34,8 +34,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.12.0(jiti@2.7.0)(supports-color@11.0.0))
       '@netlify/functions':
-        specifier: ^6.0.3
-        version: 6.0.3
+        specifier: ^6.1.0
+        version: 6.1.0
       '@types/node':
         specifier: ^26.6.4
         version: 26.6.4
@@ -1880,6 +1880,10 @@ packages:
     resolution: {integrity: sha512-7GybzVhXvnQboaninZLRv5HG15VrvzlQFSSsnfNNLsQqxzG8cl7YJR61aNR3tFhxeTaLX2llmGBPEjUGHUEidg==}
     engines: {node: '>=22.12.0'}
 
+  '@netlify/cache@4.2.0':
+    resolution: {integrity: sha512-xT8DGkqwnw3C1TzBmgvJl8NyEugGNKoj6o5aKoSPxKXLGI2Hfm6JodsSHwl9r5drotMMY+x1rH5GjprLngKvIA==}
+    engines: {node: '>=22.12.0'}
+
   '@netlify/config@25.2.5':
     resolution: {integrity: sha512-VqJeiQk2eZ9o3ls7C57e2TEalQdR2U3oLjI/Rlo9njU0l8bD3Cr6kBTU5shGIPQgeJVGU9rQLaX24Yd7WXrWVA==}
     engines: {node: '>=22.12.0'}
@@ -1940,8 +1944,8 @@ packages:
     resolution: {integrity: sha512-JqbPgAOt2GAwzCEitdEWAHOn6AkZ0Rna401wdAyuDIBiDv9M03b3Cu5mGH7/eHOmIXfZIcN1pG35flHjfu6asQ==}
     engines: {node: '>=22.12.0'}
 
-  '@netlify/functions@6.0.3':
-    resolution: {integrity: sha512-6KHpsR2L4VQL2gMm3VvG46xBNTga/SbOziluInR0++gkvOuQ/T2pxsxf2Rys5wOikpNY3Zv1IoE52/pWBJjZ9Q==}
+  '@netlify/functions@6.1.0':
+    resolution: {integrity: sha512-Kwbood+CBR0okDmimwQ7YhsLU5jV0ON/8f6SvaTklVqDMOMfaHhaSsl6ELgnpWwlKgnkDYUf1Sg2BIJnrenRrA==}
     engines: {node: '>=22.12.0'}
 
   '@netlify/git-utils@7.1.1':
@@ -9933,6 +9937,10 @@ snapshots:
     dependencies:
       '@netlify/runtime-utils': 3.0.0
 
+  '@netlify/cache@4.2.0':
+    dependencies:
+      '@netlify/runtime-utils': 3.0.0
+
   '@netlify/config@25.2.5':
     dependencies:
       '@netlify/api': 15.1.2
@@ -10158,8 +10166,9 @@ snapshots:
     dependencies:
       '@netlify/types': 3.2.0
 
-  '@netlify/functions@6.0.3':
+  '@netlify/functions@6.1.0':
     dependencies:
+      '@netlify/cache': 4.2.0
       '@netlify/types': 3.3.0
 
   '@netlify/git-utils@7.1.1':
