@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@sanity/client':
-        specifier: ^8.14.1
-        version: 8.14.1
+        specifier: ^8.16.0
+        version: 8.16.0
       '@sanity/image-url':
         specifier: ^2.1.1
         version: 2.1.1
@@ -2698,10 +2698,6 @@ packages:
   '@sanity/client@7.27.0':
     resolution: {integrity: sha512-qPVfGFo0bjUmRRtrx8mk1a2UnPPM93CFQr97bNacm2J3nShdhJlR6goNA/pQ7eRQO9uEG8moyUNrINYVGXgpPA==}
     engines: {node: '>=20'}
-
-  '@sanity/client@8.14.1':
-    resolution: {integrity: sha512-NQNo0yigdHF4edYwUEVqyDi4ZsTUmWT2YMGUn/sQOW6/T+KPAuVXbVZk6gO+Vzd7dTAhaWj8AV/gIddjpo5P6Q==}
-    engines: {node: '>=22.12.0'}
 
   '@sanity/client@8.16.0':
     resolution: {integrity: sha512-x6VKopU1Rt2mp3YBQRBIyWE2ebzqc4sMwUbQJJzIzNS0TMnNURvHe/z1qo/bDIph37B5vYvfWIT7Js6SPAQkUQ==}
@@ -11125,15 +11121,6 @@ snapshots:
       nanoid: 3.3.20
       rxjs: 7.8.2
 
-  '@sanity/client@8.14.1':
-    dependencies:
-      eventsource: 5.1.4
-      get-it: 9.6.2
-      obug: 3.0.0
-      rxjs: 7.8.2
-    transitivePeerDependencies:
-      - vitest
-
   '@sanity/client@8.16.0':
     dependencies:
       eventsource: 5.1.4
@@ -11276,7 +11263,7 @@ snapshots:
 
   '@sanity/migrate@8.0.5(@types/react@19.3.0)(xstate@5.33.4)':
     dependencies:
-      '@sanity/client': 8.14.1
+      '@sanity/client': 8.16.0
       '@sanity/mutate': 0.18.2(xstate@5.33.4)
       '@sanity/types': 6.21.0(@types/react@19.3.0)
       '@sanity/util': 6.21.0(@types/react@19.3.0)
@@ -11294,7 +11281,7 @@ snapshots:
   '@sanity/mutate@0.18.2(xstate@5.33.4)':
     dependencies:
       '@isaacs/ttlcache': 2.1.5
-      '@sanity/client': 8.14.1
+      '@sanity/client': 8.16.0
       '@sanity/diff-match-patch': 3.2.1
       '@sanity/uuid': 3.0.3
       hotscript: 1.0.13
@@ -11420,7 +11407,7 @@ snapshots:
   '@sanity/sdk-react@3.12.0(@types/react@19.3.0)(immer@10.2.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(use-sync-external-store@1.7.0(react@19.3.1))(xstate@5.33.4)':
     dependencies:
       '@module-federation/runtime': 2.9.2
-      '@sanity/client': 8.14.1
+      '@sanity/client': 8.16.0
       '@sanity/message-protocol': 0.24.0
       '@sanity/sdk': 3.12.0(@types/react@19.3.0)(immer@10.2.0)(react@19.3.1)(use-sync-external-store@1.7.0(react@19.3.1))(xstate@5.33.4)
       '@sanity/types': 6.21.0(@types/react@19.3.0)
@@ -11439,7 +11426,7 @@ snapshots:
   '@sanity/sdk@3.12.0(@types/react@19.3.0)(immer@10.2.0)(react@19.3.1)(use-sync-external-store@1.7.0(react@19.3.1))(xstate@5.33.4)':
     dependencies:
       '@sanity/bifur-client': 2.0.2
-      '@sanity/client': 8.14.1
+      '@sanity/client': 8.16.0
       '@sanity/comlink': 4.0.3
       '@sanity/diff-match-patch': 3.2.1
       '@sanity/diff-patch': 7.0.0
@@ -11487,7 +11474,7 @@ snapshots:
 
   '@sanity/types@6.21.0(@types/react@19.3.0)':
     dependencies:
-      '@sanity/client': 8.14.1
+      '@sanity/client': 8.16.0
       '@sanity/media-library-types': 1.7.1(@sanity/types@6.21.0(@types/react@19.3.0))
       '@types/react': 19.3.0
     transitivePeerDependencies:
@@ -11564,7 +11551,7 @@ snapshots:
     dependencies:
       '@date-fns/tz': 1.5.0
       '@date-fns/utc': 2.1.1
-      '@sanity/client': 8.14.1
+      '@sanity/client': 8.16.0
       '@sanity/types': 6.21.0(@types/react@19.3.0)
       date-fns: 4.4.0
       get-it: 9.6.2
@@ -11618,7 +11605,7 @@ snapshots:
       '@lezer/highlight': 1.2.3
       '@rexxars/react-json-inspector': 9.0.1(react@19.3.1)
       '@rexxars/react-split-pane': 1.0.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
-      '@sanity/client': 8.14.1
+      '@sanity/client': 8.16.0
       '@sanity/color': 3.0.9
       '@sanity/icons': 5.2.3(react@19.3.1)
       '@sanity/lezer-groq': 1.0.4

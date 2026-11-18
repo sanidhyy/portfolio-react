@@ -16,7 +16,7 @@
     "studio:build": "pnpm --dir backend-sanity build"
   },
   "dependencies": {
-    "@sanity/client": "^8.14.1",
+    "@sanity/client": "^8.16.0",
     "@sanity/image-url": "^2.1.1",
     "motion": "^14.9.1",
     "react": "^19.3.1",
